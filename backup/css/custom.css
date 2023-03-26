@@ -1,0 +1,39 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+.footer .email-box{
+	display: inline-block;
+	margin-right: 20px;
+}
+.footer .email-box a{
+	color: #bdbdbd;
+	font-size: 16px;
+}
+.footer .email-box a:hover{
+	color: #fd6802;
+}
+.footer .email-box a i{
+	padding: 0px 5px;
+}
+.footer .phone-box{
+	display: inline-block;
+}
+
+.footer .phone-box a{
+	color: #bdbdbd;
+	font-size: 16px;
+}
+.footer .phone-box a:hover{
+	color: #fd6802;
+}
+.footer .phone-box a i{
+	padding: 0px 5px;
+}
+.space{
+    margin-top: 10%;
+}
+#hr4{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px dashed #aaa4;
+}
