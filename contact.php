@@ -13,8 +13,8 @@ $first_name     = $_POST['first_name'];
 $last_name     = $_POST['last_name'];
 $email    = $_POST['email'];
 $phone   = $_POST['phone'];
-$select_price   = $_POST['select_price'];
-$select_service   = $_POST['select_service'];
+// $select_price   = $_POST['select_price'];
+// $select_service   = $_POST['select_service'];
 $subject  = $_POST['subject'];
 $comments = $_POST['comments'];
 $verify   = $_POST['verify'];
@@ -45,7 +45,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "support@detectiveagencyindore.com";
+$address = "Bakulmehra8@gmail.com";
 
 
 // Configuration option.
@@ -60,7 +60,7 @@ $e_subject = 'You\'ve been contacted by ' . $first_name . '.';
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "You have been contacted by $first_name. $first_name selected service of $select_service, their additional message is as follows. Customer max budge is $select_price, for this project." . PHP_EOL . PHP_EOL;
+$e_body = "You have been contacted by $first_name. Their additional message is as follows. Customer max budge is, for this project." . PHP_EOL . PHP_EOL;
 $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $first_name via email, $email or via phone $phone";
 
@@ -68,9 +68,9 @@ $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
 $headers = "From: $email" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
-$headers .= "MIME-Version: 1.0" . PHP_EOL;
-$headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
-$headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
+// $headers .= "MIME-Version: 1.0" . PHP_EOL;
+// $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
+// $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 if(mail($address, $e_subject, $msg, $headers)) {
 
@@ -83,8 +83,12 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo "</div>";
 	echo "</fieldset>";
 
+	header("Location: index.html");
+
 } else {
 
 	echo 'ERROR!';
+	header("Location: about-us.html");
 
 }
+// header("Location: index.html");
