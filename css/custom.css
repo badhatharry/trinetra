@@ -1,124 +1,56 @@
-
 /** ADD YOUR AWESOME CODES HERE **/
-.footer .email-box{
+.footer .email-box {
 	display: inline-block;
 	margin-right: 20px;
 }
-.footer .email-box a{
+
+.footer .email-box a {
 	color: #bdbdbd;
 	font-size: 16px;
 }
-.footer .email-box a:hover{
+
+.footer .email-box a:hover {
 	color: #fd6802;
 }
-.footer .email-box a i{
+
+.footer .email-box a i {
 	padding: 0px 5px;
 }
-.footer .phone-box{
+
+.footer .phone-box {
 	display: inline-block;
 }
 
-.footer .phone-box a{
+.footer .phone-box a {
 	color: #bdbdbd;
 	font-size: 16px;
 }
-.footer .phone-box a:hover{
+
+.footer .phone-box a:hover {
 	color: #fd6802;
 }
-.footer .phone-box a i{
+
+.footer .phone-box a i {
 	padding: 0px 5px;
 }
-.space{
-    margin-top: 10%;
-}
-#hr4{
-        margin-top: 10px;
-        margin-bottom: 20px;
-        border: 0;
-        border-top: 1px dashed #aaa4;
+
+.space {
+	margin-top: 10%;
 }
 
-/* The container <div> - needed to position the dropdown content */
-/* .dropdown {
+#hr4 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px dashed #aaa4;
+}
+
+/* -------------------------------------------------------------------- */
+/* .dropdown-submenu {
 	position: relative;
-	display: inline-block;
-  } */
-
-.dropbtn {
-	/* background-color: #04AA6D;
-	color: white;
-	padding: 16px;
-	font-size: 16px; */
-	border: none;
-  }
-  
-
-/* menu list for navbar case catagories */
-.dropbtn .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #ffffff;
-	/* min-width: 160px; */
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
-	z-index: 1;
-	margin-top: .5%;
-	/* float: right; */
-	padding: 5%;
-  }
-  /* Links inside the dropdown */
-  .dropbtn .dropdown-content a {
-	text-align: center;
-	color: black;
-	/* padding: 12px 16px; */
-	/* padding: 4vh; */
-	/* margin: 15vh; */
-	text-decoration: none;
-	display: block;
-	margin-top: 5px;
-	/* height: 40px; */
-	width: 150px;
-	background: none;
-	border: none;
-	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-  }
-  /* replica of uper vala */
-  .dropbtn .dropdown-content .ddd {
-	text-align: center;
-	color: black;
-	/* padding: 12px 16px; */
-	/* padding: 4vh; */
-	/* margin: 15vh; */
-	text-decoration: none;
-	display: inline-block;
-	/* margin-top: 3%; */
-	/* height: 5vh;
-	width: 25vh; */
-	background: none;
-	border: none;
-	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
-  }
-  /* Change color of dropdown links on hover */
-/* .dropdown-content a:hover {background-color: #ddd;} */
-
-/* Show the dropdown menu on hover */
-.dropbtn:hover .dropdown-content {
-	display: block;
 }
-.dropbtn .dropdown-content a:hover{
-	color: #ffffff;
-	/* box-shadow: 0 10px 20px 0 rgba(5, 16, 44, .15); */
-	/* border-radius: 25px 0px 25px 0px; */
-	background: #fd6802;
-} 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 
-
-.dropdown-submenu {
-	position: relative;
-  }
-  
-  .dropdown-submenu > .dropdown-menu {
+.dropdown-submenu>.dropdown-menu {
 	top: 0;
 	right: 100%;
 	margin-top: 6px;
@@ -126,145 +58,329 @@
 	-webkit-border-radius: 0 6px 6px 6px;
 	-moz-border-radius: 0 6px 6px;
 	border-radius: 0 6px 6px 6px;
-  }
-  
-  .dropdown-submenu:hover > .dropdown-menu {
+	overflow-y: scroll;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
 	display: block;
-  }
+	overflow: auto;
+  } */
+
+/* ----------------------------------------------------------------------------- */
+
+
+
 /*   
   .dropdown-submenu > a:hover {
 	display: block; */
-	/* content: "text_21"; */
-	/* float: left;
+/* content: "text_21"; */
+/* float: left;
 	width: 0;
 	height: 0;
 	border-color: black;
 	border-style: solid;
 	border-width: 5px 0 5px 5px; */
-	/* border-left-color: #100d0d; */
-	/* margin-top: 5px;
+/* border-left-color: #100d0d; */
+/* margin-top: 5px;
 	margin-right: -10px; */
-	/* color: #ffffff;
+/* color: #ffffff;
 	background: #fd6802;
   } */
-  
-  /* .dropdown-submenu:hover a{
+
+/* .dropdown-submenu:hover a{
 	border-left-color: #070707;
 	color: #ffffff; */
-	/* box-shadow: 0 10px 20px 0 rgba(5, 16, 44, .15); */
-	/* border-radius: 25px 0px 25px 0px; */
-	/* background: #fd6802;
+/* box-shadow: 0 10px 20px 0 rgba(5, 16, 44, .15); */
+/* border-radius: 25px 0px 25px 0px; */
+/* background: #fd6802;
   } */
-  
-  /* .dropdown-submenu.pull-left {
+
+/* .dropdown-submenu.pull-left {
 	float: left;
   } */
-  
-  /* .dropdown-submenu.pull-left > .dropdown-menu {
+
+/* .dropdown-submenu.pull-left > .dropdown-menu {
 	right: -100%;
 	margin-left: 10px;
 	-webkit-border-radius: 6px 0 6px 6px;
 	-moz-border-radius: 6px 0 6px 6px;
 	border-radius: 6px 0 6px 6px;
   } */
-  .dropdown .dropdown-menu:hover a, .dropdown .dropdown-submenu:hover a{
+.dropdown .dropdown-menu:hover a,
+.dropdown .dropdown-submenu:hover a {
 	color: #ffffff;
 	/* box-shadow: 0 10px 20px 0 rgba(5, 16, 44, .15); */
 	/* border-radius: 25px 0px 25px 0px; */
-	background: #fd6802;
-  }
-  
-  /* new kind of approach */ 
-  .dropdown-menu > li > a.cc {
-    background-color: transparent !important;
-    color: #000000 !important;
-    font-size: 15px;
-    padding: 10px 20px;
+	/* background: #fd6802; */
 }
-.dropdown-menu > li:hover > a.cc {
-    background-color: #fd6802 !important;
-    color: #ffffff !important;
-    font-size: 15px;
-    padding: 10px 20px;
+
+/* new kind of approach */
+.dropdown-menu>li>a.cc {
+	background-color: transparent !important;
+	color: #000000 !important;
+	font-size: 15px;
+	padding: 10px 20px;
 }
-.descript{
+
+.dropdown-menu>li:hover>a.cc {
+	background-color: #fd6802 !important;
+	color: #ffffff !important;
+	font-size: 15px;
+	padding: 10px 20px;
+}
+
+.descript {
 	margin: 20px;
 }
-.mt2{
+
+.mt2 {
 	margin-top: 20px;
 }
-.mt3{
+
+.mt3 {
 	margin-top: 30px;
 }
-.mt4{
+
+.mt4 {
 	margin-top: 40px;
 }
-.hr5{
+
+.hr5 {
 	/* margin-top: 10px; */
 	/* margin-bottom: 10px; */
 	margin: auto;
 	border: 0;
 	border-top: 1px solid #aaa4;
 }
-.side-item{
-border-bottom-color: rgb(221, 221, 221);
-border-bottom-style: solid;
-border-bottom-width: 1px;
-padding-top: 5px;
+
+.side-item {
+	border-bottom-color: rgb(221, 221, 221);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-top: 5px;
 
 }
-.list-group > li{
+
+.list-group>li {
 	padding: 5px 0;
 }
-.list-group > li:hover a{
+
+.list-group>li:hover a {
 	color: #fd6802;
 }
-.list-group{
+
+.list-group {
 	border: none;
 	width: 90%;
 	margin: auto;
 }
-.list-group .side-item i{
+
+.list-group .side-item i {
 	padding-right: 5px;
 	font-size: 18px;
 }
 
 /* Vertical ruler */
 
-.vertical-line{
+.vertical-line {
 	display: inline-block;
 	border-left: 1px solid #090909;
 	margin: 0 10px;
 	height: 500px;
 }
 
-.con-card{
+.con-card {
 	background-color: #fd6802;
 	color: #ffffff;
 	margin: 0 auto;
 	width: 90%;
 	padding: 25px;
 }
-.con-card a{
+
+.con-card a {
 	background-color: #fd6802;
 	color: #ffffff;
 	margin: auto;
-	
+
 }
-.con-card i{
-	color:black;
+
+.con-card i {
+	color: black;
 	margin: 0;
 }
-.mailb{
+
+.mailb {
 	/* max-width: 90%; */
 	/* overflow-wrap: normal; */
 	margin: 0;
 	word-wrap: break-word;
 	font-size: small;
 }
-.con-card .row{
+
+.con-card .row {
 	padding: 10px;
 }
-.con-card:hover{
+
+.con-card:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* ==========================================
+-------- Menu code -----------------------
+========================================== */
+
+/*==========Sub Menu=v==========*/
+.mainmenu .collapse ul>li:hover>a {
+	background: #54c6d4;
+}
+
+.mainmenu .collapse ul ul>li:hover>a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	background: #CBEAF0;
+}
+
+.mainmenu .collapse ul ul ul>li:hover>a {
+	background: #CBEAF0;
+}
+
+.mainmenu .collapse ul ul,
+.mainmenu .collapse ul ul.dropdown-menu {
+	background: #98D7E1;
+}
+
+.mainmenu .collapse ul ul ul,
+.mainmenu .collapse ul ul ul.dropdown-menu {
+	background: #0a1464
+}
+
+.mainmenu .collapse ul ul ul ul,
+.mainmenu .collapse ul ul ul ul.dropdown-menu {
+	background: #e4eeb8
+}
+
+/******************************Drop-down menu work on hover**********************************/
+.mainmenu {
+	background: none;
+	border: 0 solid;
+	margin: 0;
+	padding: 0;
+	min-height: 20px
+}
+
+@media only screen and (min-width: 767px) {
+	.mainmenu .collapse ul li {
+		position: relative;
+	}
+
+	.mainmenu .collapse ul li:hover>ul {
+		display: block
+	}
+
+	.mainmenu .collapse ul ul {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		min-width: 250px;
+		display: none
+	}
+
+	/*******/
+	.mainmenu .collapse ul ul li {
+		position: relative
+	}
+
+	.mainmenu .collapse ul ul li:hover>ul {
+		display: block
+	}
+
+	.mainmenu .collapse ul ul ul {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		min-width: 250px;
+		display: none
+	}
+
+	/*******/
+	.mainmenu .collapse ul ul ul li {
+		position: relative
+	}
+
+	.mainmenu .collapse ul ul ul li:hover ul {
+		display: block
+	}
+
+	.mainmenu .collapse ul ul ul ul {
+		position: absolute;
+		top: 0;
+		left: -100%;
+		min-width: 250px;
+		display: none;
+		z-index: 1
+	}
+
+}
+/* -----------------------------------------------------------------
+-------------- customization for blog images -----------------------
+-------------------------------------------------------------------- */
+.post-media.blog{
+	margin-bottom: 30px;
+}
+.post-media.blog img{
+	aspect-ratio: 7/2;
+	box-shadow:2px 2px 10px #707070 ;
+	/* z-index: 1000; */
+	
+
+}
+
+.pitem img.thumb {
+    
+    aspect-ratio: 1/1;
+    object-fit: contain;
+	border: 5px double #000000;
+	border-radius: 0;
+	padding:10px;
+}
+.service-widget.slider__item{
+	/* margin: 0px 10px; */
+	border-right:2px solid #000000;
+	border-left: 2px solid #000;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;	
+	padding: 5px;
+}
+/* Certificate slider  */
+
+.slider__container {
+	width:100%;
+	position:relative;
+  }
+  .slick-list {
+	perspective:1px;
+  }
+  .slick-track {
+	will-change:transform,transition;
+  }
+  .slider__items {
+	display:flex;
+  }
+  /* .slider-prev {
+	position:absolute;
+	z-index:1;
+	top:50%;
+	left:10px;
+  }
+  .slider-next {
+	position:absolute;
+	z-index:1;
+	top:50%;
+	right:10px;
+  } */
+video{
+	width: 100%;
+	height: auto;
+	/* aspect-ratio: 1/5; */
 }

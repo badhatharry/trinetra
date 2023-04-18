@@ -210,10 +210,11 @@ blockquote {
     margin: 20px 0 20px;
     padding: 20px;
 }
-
-.message-box ul,.message-box ul li, .message-box ol{
+/* ---------------------- Code for UL------------------------------- */
+.message-box ul,.message-box ul li{
 	margin-left: 20px;
-	padding: 0px;
+    text-align: justify;
+	padding: 5px;
 	list-style:square;
     vertical-align:middle;
     /* background-color: #1AD03F; */
@@ -224,6 +225,24 @@ blockquote {
      vertical-align:middle;
     line-height:20px;
     color: #fd6802;
+}
+/* =======================for OL=============================== */
+
+.message-box ol,.message-box ol li{
+    text-align: justify;
+	margin-left: 20px;
+	padding: 5px;
+	list-style:decimal-leading-zero;
+    vertical-align:middle;
+    /* background-color: #1AD03F; */
+}
+.message-box ol li::marker{
+    /* content:"disc"; */
+    font-size:16px;
+     vertical-align:middle;
+    line-height:20px;
+    color: #fd6802;
+    font-weight: 600;
 }
 
 ul, li, ol{
@@ -2040,51 +2059,51 @@ select.mobile-device {
     padding: 20px;
     width: 90%;
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.0);
-    background-color: #393939;
+    background-color: #272727;
     
 }
 
 .contact_form .form-control {
-    background-color: #fff;
+    background-color: #f9f6f6;
     margin-bottom: 10px;
     border: 1px solid #ebebeb;
     box-sizing: border-box;
-    color: #bcbcbc;
+    color: #000000;
     font-size: 16px;
     outline: 0 none;
     /* padding: 10px 25px; */
     /* height: 55px; */
     resize: none;
-    box-shadow: none !important;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5) !important;
     width: 100%;
     /* margin: 10px 20px; */
 }
 
 
 .contact_form textarea {
-    color: #bcbcbc;
+    color: #000000;
     /* padding: 20px 25px !important; */
     /* height: 160px !important; */
 }
 
 .contact_form .form-control::-webkit-input-placeholder {
-    color: #bcbcbc;
+    color: #000000;
 }
 
 .contact_form .form-control::-moz-placeholder {
     opacity: 1;
-    color: #bcbcbc;
+    color: #000000;
 }
 
 .contact_form .form-control::-ms-input-placeholder {
-    color: #bcbcbc;
+    color: #000000;
 }
 
 #contact {
     background: url(images/bg.png) no-repeat center center #fff;
 }
 form button{
-    left: 0;
+    right: 0;
 
 }
 
@@ -2136,6 +2155,7 @@ form button{
 
 .footer .widget-title img{
    height: 60px;
+   background-color:#FFFFFF;
 }
 
 .footer .widget-title .iframe{

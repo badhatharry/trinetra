@@ -1,7 +1,6 @@
 /******************************************
     Version: 1.0
 /****************************************** */
-
 (function ($) {
     "use strict";
 
@@ -9,13 +8,13 @@
      Fixed menu
      =============================================== */
 
-    $(window).on('scroll', function () {
-        if ($(window).scrollTop() > 30) {
-            $('.header_style_01').addClass('fixed-menu');
-        } else {
-            $('.header_style_01').removeClass('fixed-menu');
-        }
-    });
+    // $(window).on('scroll', function () {
+    //     if ($(window).scrollTop() > 30) {
+    //         $('.header_style_01').addClass('fixed-menu');
+    //     } else {
+    //         $('.header_style_01').removeClass('fixed-menu');
+    //     }
+    // });
 
 
     /* ==============================================
@@ -75,8 +74,8 @@
         =============================================== */
 
     $(window).load(function () {
-        $("#preloader").on(500).fadeOut();
-        $(".preloader").on(600).fadeOut("slow");
+        $("#preloader").on(100).fadeOut();
+        $(".preloader").on(100).fadeOut("slow");
     });
 
     /* ==============================================
@@ -209,3 +208,17 @@
     });
 
 })(jQuery);
+
+(function($){
+	$(document).ready(function(){
+		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+			event.preventDefault(); 
+			event.stopPropagation(); 
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().toggleClass('open');
+		});
+	});
+})(jQuery);
+
+// ---------- Certificate Slider Js---------------------
+
